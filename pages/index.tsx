@@ -17,32 +17,32 @@ import {
   LightningBoltIcon,
   MailIcon,
   ScaleIcon,
+  CloudIcon,
 } from "@heroicons/react/outline";
 
-import { Ground, Rig, Triangle } from "../components/threejs/Triangle";
 import Box from "../components/threejs/Box";
 
 const features = [
   {
-    name: "Competitive rates",
+    name: "Web and Mobile Development",
     description:
       "Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.",
     icon: GlobeAltIcon,
   },
   {
-    name: "No hidden fees",
+    name: "Cloud Architecture",
     description:
       "Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.",
-    icon: ScaleIcon,
+    icon: CloudIcon,
   },
   {
-    name: "Instant transfers",
+    name: "Leadership",
     description:
       "Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.",
     icon: LightningBoltIcon,
   },
   {
-    name: "Reminder emails",
+    name: "Web3",
     description:
       "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.",
     icon: MailIcon,
@@ -176,7 +176,7 @@ const Home: NextPage = () => {
                   {features.map((feature) => (
                     <div key={feature.name}>
                       <dt>
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-pink-400 text-white">
                           <feature.icon
                             className="h-6 w-6"
                             aria-hidden="true"
