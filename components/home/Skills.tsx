@@ -70,7 +70,7 @@ export default function Skills() {
         />
       </svg>
 
-      <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8 pt-10 ">
+      <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8 ">
         <div className="lg:col-span-1">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             What are my skills?

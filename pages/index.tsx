@@ -1,18 +1,5 @@
 import type { NextPage } from "next";
-import { Canvas } from "@react-three/fiber";
-import profilePic from "../public/jason2.jpg";
-
-import { CameraIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import Head from "next/head";
-import {
-  GlobeAltIcon,
-  LightningBoltIcon,
-  CloudIcon,
-  BeakerIcon,
-} from "@heroicons/react/outline";
-
-import Box from "../components/threejs/Box";
-import Image from "next/image";
 import Hero from "../components/home/hero";
 import About from "../components/home/About";
 import Skills from "../components/home/Skills";
@@ -22,7 +9,7 @@ import BlogPosts from "../components/home/BlogPosts";
 
 const Home: NextPage = () => {
   return (
-    <div className="h-screen ">
+    <div className="h-screen">
       <Head>
         <title>Jason Wiker</title>
         <meta name="description" content="Jason Wiker" />
