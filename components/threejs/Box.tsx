@@ -1,5 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import {
+  PerspectiveCamera,
+  Environment,
+  MeshDistortMaterial,
+  ContactShadows,
+} from "@react-three/drei";
+import { a } from "@react-spring/three";
+import { useSpring } from "@react-spring/core";
+const AnimatedMaterial = a(MeshDistortMaterial);
 
 export default function Box(props: any) {
   // This reference will give us direct access to the mesh
@@ -13,6 +22,7 @@ export default function Box(props: any) {
     const current: any = mesh.current;
     return (current.rotation.x += 0.01);
   });
+
   // Return view, these are regular three.js elements expressed in JSX
   return (
     <mesh
@@ -24,14 +34,14 @@ export default function Box(props: any) {
       onPointerOut={(event) => setHover(false)}
     >
       <torusGeometry args={[10, 3, 16, 100]} />
-      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
-      {/* <meshDis
-        color={color}
-        envMapIntensity={env}
-        clearcoat={coat}
+      {/* <meshStandardMaterial color={hovered ? "hotpink" : "orange"} /> */}
+      <AnimatedMaterial
+        color={"#202020"}
+        envMapIntensity={1}
+        clearcoat={1}
         clearcoatRoughness={0}
         metalness={0.1}
-      /> */}
+      />
     </mesh>
   );
 }
