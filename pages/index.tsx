@@ -10,7 +10,7 @@ import {
 } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { CameraIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import Head from "next/head";
 import {
   GlobeAltIcon,
@@ -26,25 +26,25 @@ const features = [
   {
     name: "Web and Mobile Development",
     description:
-      "Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.",
+      "Designed and built websites and mobile apps for small businesses, startups and large corporations.",
     icon: GlobeAltIcon,
   },
   {
     name: "Cloud Architecture",
     description:
-      "Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.",
+      "Tailored cloud solutions for businesses of all sizes, from data centers to private clouds.",
     icon: CloudIcon,
   },
   {
     name: "Leadership",
     description:
-      "Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.",
+      "Lead teams of up to 10 people in the design, development and implementation of cloud solutions and application development.",
     icon: LightningBoltIcon,
   },
   {
     name: "Web3",
     description:
-      "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.",
+      "My new favorite technology, Ethereum, is the backbone of my web development and blockchain projects. I'm truly passionate about taking advantage of the power of the blockchain and powering the decentralized internet of the future.",
     icon: BeakerIcon,
   },
 ];
@@ -138,9 +138,141 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
+            <div className="bg-black overflow-hidden">
+              <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="hidden lg:block bg-black absolute top-0 bottom-0 left-3/4 w-screen" />
+                <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                  <div>
+                    <h2 className="text-base text-orange-500 font-semibold tracking-wide uppercase">
+                      Who am I?
+                    </h2>
+                    <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+                      Meet Jason
+                    </h3>
+                  </div>
+                </div>
+                <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                  <div className="relative lg:row-start-1 lg:col-start-2">
+                    <svg
+                      className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                      width={404}
+                      height={384}
+                      fill="none"
+                      viewBox="0 0 404 384"
+                      aria-hidden="true"
+                    >
+                      <defs>
+                        <pattern
+                          id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                          x={0}
+                          y={0}
+                          width={20}
+                          height={20}
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <rect
+                            x={0}
+                            y={0}
+                            width={4}
+                            height={4}
+                            className="text-gray-700"
+                            fill="currentColor"
+                          />
+                        </pattern>
+                      </defs>
+                      <rect
+                        width={404}
+                        height={384}
+                        fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
+                      />
+                    </svg>
+                    <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+                      <figure>
+                        <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
+                          <img
+                            className="rounded-lg shadow-lg object-cover object-center"
+                            src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
+                            alt="Whitney leaning against a railing on a downtown street"
+                            width={1184}
+                            height={1376}
+                          />
+                        </div>
+                        <figcaption className="mt-3 flex text-sm text-gray-500">
+                          <CameraIcon
+                            className="flex-none w-5 h-5 text-gray-400"
+                            aria-hidden="true"
+                          />
+                          <span className="ml-2">
+                            Photograph by Marcus O’Leary
+                          </span>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div className="mt-8 lg:mt-0">
+                    <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                      <p className="text-lg text-gray-500">
+                        Sagittis scelerisque nulla cursus in enim consectetur
+                        quam. Dictum urna sed consectetur neque tristique
+                        pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                      </p>
+                    </div>
+                    <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                      <p>
+                        Sollicitudin tristique eros erat odio sed vitae,
+                        consequat turpis elementum. Lorem nibh vel, eget pretium
+                        arcu vitae. Eros eu viverra donec ut volutpat donec
+                        laoreet quam urna.
+                      </p>
+                      <p>
+                        Bibendum eu nulla feugiat justo, elit adipiscing. Ut
+                        tristique sit nisi lorem pulvinar. Urna, laoreet fusce
+                        nibh leo. Dictum et et et sit. Faucibus sed non gravida
+                        lectus dignissim imperdiet a.
+                      </p>
+                      <p>
+                        Dictum magnis risus phasellus vitae quam morbi. Quis
+                        lorem lorem arcu, metus, egestas netus cursus. In.
+                      </p>
+                      <ul role="list">
+                        <li>Quis elit egestas venenatis mattis dignissim.</li>
+                        <li>
+                          Cras cras lobortis vitae vivamus ultricies facilisis
+                          tempus.
+                        </li>
+                        <li>
+                          Orci in sit morbi dignissim metus diam arcu pretium.
+                        </li>
+                      </ul>
+                      <p>
+                        Rhoncus nisl, libero egestas diam fermentum dui. At quis
+                        tincidunt vel ultricies. Vulputate aliquet velit
+                        faucibus semper. Pellentesque in venenatis vestibulum
+                        consectetur nibh id. In id ut tempus egestas. Enim sit
+                        aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
+                      </p>
+                      <h3>How we helped</h3>
+                      <p>
+                        Tincidunt integer commodo, cursus etiam aliquam neque,
+                        et. Consectetur pretium in volutpat, diam. Montes, magna
+                        cursus nulla feugiat dignissim id lobortis amet. Laoreet
+                        sem est phasellus eu proin massa, lectus. Diam rutrum
+                        posuere donec ultricies non morbi. Mi a platea auctor
+                        mi.
+                      </p>
+                      <p>
+                        Sagittis scelerisque nulla cursus in enim consectetur
+                        quam. Dictum urna sed consectetur neque tristique
+                        pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-              {/* <svg
-                className=" absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
+              <svg
+                className="hidden lg:block  absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
                 width={404}
                 height={784}
                 fill="none"
@@ -171,12 +303,12 @@ const Home: NextPage = () => {
                   height={784}
                   fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)"
                 />
-              </svg> */}
+              </svg>
 
               <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8 pt-10 ">
                 <div className="lg:col-span-1">
                   <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                    Who am I?
+                    What are my skills?
                   </h2>
                 </div>
                 <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
