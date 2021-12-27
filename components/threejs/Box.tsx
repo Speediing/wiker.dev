@@ -20,7 +20,7 @@ export default function Box(props: any) {
   useFrame((state, delta) => {
     if (!mesh.current) return;
     const current: any = mesh.current;
-    return (current.rotation.x += 0.05);
+    return (current.rotation.x += 0.01);
   });
 
   // Return view, these are regular three.js elements expressed in JSX
@@ -35,14 +35,6 @@ export default function Box(props: any) {
     >
       <torusGeometry args={[10, 3, 16, 100]} />
       <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
-      {/* // @ts-ignore
-      <AnimatedMaterial
-        color={"#202020"}
-        envMapIntensity={1}
-        clearcoat={1}
-        clearcoatRoughness={0}
-        metalness={0.1}
-      /> */}
     </mesh>
   );
 }

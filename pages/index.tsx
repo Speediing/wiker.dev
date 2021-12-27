@@ -16,8 +16,8 @@ import {
   GlobeAltIcon,
   LightningBoltIcon,
   MailIcon,
-  ScaleIcon,
   CloudIcon,
+  BeakerIcon,
 } from "@heroicons/react/outline";
 
 import Box from "../components/threejs/Box";
@@ -45,7 +45,7 @@ const features = [
     name: "Web3",
     description:
       "Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.",
-    icon: MailIcon,
+    icon: BeakerIcon,
   },
 ];
 
@@ -91,7 +91,7 @@ const Home: NextPage = () => {
                   <div className="lg:py-24">
                     <a
                       href="#"
-                      className="inline-flex items-center text-white bg-gray-800 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
+                      className="inline-flex items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                     >
                       <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-orange-400 rounded-full">
                         I&apos;m Writing
@@ -111,7 +111,14 @@ const Home: NextPage = () => {
                       cloud-enabled, and Web3 application development
                     </p>
                     <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                      Currently working as a Solution Architect at Xerris Inc.
+                      Currently working as a Solution Architect at
+                      <a
+                        href={"https://xerris.com"}
+                        className="font-bold text-white"
+                      >
+                        {" "}
+                        Xerris Inc.
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -166,7 +173,7 @@ const Home: NextPage = () => {
                 />
               </svg> */}
 
-              <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8 pt-3">
+              <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8 pt-10 ">
                 <div className="lg:col-span-1">
                   <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                     Who am I?
@@ -176,7 +183,7 @@ const Home: NextPage = () => {
                   {features.map((feature) => (
                     <div key={feature.name}>
                       <dt>
-                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-pink-400 text-white">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-400 text-white">
                           <feature.icon
                             className="h-6 w-6"
                             aria-hidden="true"
