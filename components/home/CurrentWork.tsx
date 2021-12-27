@@ -45,7 +45,7 @@ export default function CurrentWork() {
                     />
                   </div>
                   <div className="text-base font-medium text-white">
-                    Marcia Hill, Digital Marketing Manager
+                    Gary Jerry, Digital Marketing Manager
                   </div>
                 </div>
               </footer>
