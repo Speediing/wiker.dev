@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Hero from "../components/home/hero";
+import Hero from "../components/home/Hero";
 import About from "../components/home/About";
 import Skills from "../components/home/Skills";
 import CurrentWork from "../components/home/CurrentWork";
