@@ -23,12 +23,11 @@ export default function Box(props: any) {
     return (current.rotation.x += 0.01);
   });
 
-  // Return view, these are regular three.js elements expressed in JSX
   return (
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? 0.5 : 0.25}
+      scale={active ? 0.25 : 0.2}
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}
