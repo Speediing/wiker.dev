@@ -20,9 +20,10 @@ export default function Box(props: any) {
   useFrame((state, delta) => {
     if (!mesh.current) return;
     const current: any = mesh.current;
-    return (current.rotation.x += 0.01);
+    return (current.rotation.x += 0.05);
   });
 
+  // Return view, these are regular three.js elements expressed in JSX
   return (
     <mesh
       {...props}
