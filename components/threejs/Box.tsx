@@ -34,14 +34,15 @@ export default function Box(props: any) {
       onPointerOut={(event) => setHover(false)}
     >
       <torusGeometry args={[10, 3, 16, 100]} />
-      {/* <meshStandardMaterial color={hovered ? "hotpink" : "orange"} /> */}
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+      {/* // @ts-ignore
       <AnimatedMaterial
         color={"#202020"}
         envMapIntensity={1}
         clearcoat={1}
         clearcoatRoughness={0}
         metalness={0.1}
-      />
+      /> */}
     </mesh>
   );
 }
