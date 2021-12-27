@@ -28,12 +28,12 @@ export default function Box(props: any) {
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? 0.25 : 0.2}
+      scale={active ? 0.2 : 0.15}
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}
     >
-      <torusGeometry args={[10, 3, 16, 100]} />
+      <torusKnotGeometry args={[10, 3, 100, 16]} />
       <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
     </mesh>
   );
