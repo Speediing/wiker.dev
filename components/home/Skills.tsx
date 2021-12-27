@@ -5,6 +5,7 @@ import {
   CloudIcon,
   BeakerIcon,
 } from "@heroicons/react/outline";
+
 const features = [
   {
     name: "Web and Mobile Development",

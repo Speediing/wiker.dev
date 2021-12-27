@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import React from "react";
 import Box from "../threejs/Box";
 
-export default function hero() {
+export default function Hero() {
   return (
     <div className="mx-auto max-w-7xl lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -40,18 +40,10 @@ export default function hero() {
           </div>
         </div>
         <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-          {/* <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"> */}
-          {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-          {/* <img
-                className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/cloud-illustration-indigo-400.svg"
-                alt=""
-              /> */}
           <Canvas className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
             <pointLight position={[10, 10, 10]} />
             <Box position={[0, 0, 0]} />
           </Canvas>
-          {/* </div> */}
         </div>
       </div>
     </div>
