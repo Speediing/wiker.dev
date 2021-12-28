@@ -11,15 +11,40 @@ export default function CurrentWork() {
                 What am I working on?
               </h2>
               <p className="mt-4 text-lg text-gray-500">
-                Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet
-                sagittis viverra duis. In venenatis sem arcu pretium pharetra
-                at. Lectus viverra dui tellus ornare pharetra.
+                I am currently working on a side-project to help sharpen both my
+                Web3 skills and getting to play with the three.js ecosystem. I'm
+                building a basic 3D game using{" "}
+                <a
+                  className={"text-gray-300"}
+                  href={
+                    "https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
+                  }
+                >
+                  React-three-fiber
+                </a>
+                {" and "}
+                <a className={"text-gray-300"} href={"https://nextjs.org/"}>
+                  Next.js,
+                </a>{" "}
+                and then building a token and NFT game ecosystem around it based
+                on the{" "}
+                <a
+                  className={"text-gray-300"}
+                  href={"https://polygon.technology/"}
+                >
+                  Polygon Network
+                </a>{" "}
+                and{" "}
+                <a className={"text-gray-300"} href={"https://hardhat.org/"}>
+                  Hardhat.
+                </a>{" "}
+                I'm still in the initial stages of building the game, but
+                hopefully I'll have a working prototype in the near future.
               </p>
               <div className="mt-6">
                 <a
                   href="#"
-                  className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600"
+                  className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-400 hover:bg-orange-500"
                 >
                   View on Github
                 </a>
@@ -30,9 +55,11 @@ export default function CurrentWork() {
             <blockquote>
               <div>
                 <p className="text-base text-gray-500">
-                  &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                  diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                  venenatis in euismod ut.&rdquo;
+                  &ldquo;Whereas most technologies tend to automate workers on
+                  the periphery doing menial tasks, blockchains automate away
+                  the center. Instead of putting the taxi driver out of a job,
+                  blockchain puts Uber out of a job and lets the taxi drivers
+                  work with the customer directly.&rdquo;
                 </p>
               </div>
               <footer className="mt-3">
@@ -40,12 +67,12 @@ export default function CurrentWork() {
                   <div className="flex-shrink-0">
                     <img
                       className="h-6 w-6 rounded-full"
-                      src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                      src="https://pbs.twimg.com/profile_images/977496875887558661/L86xyLF4_400x400.jpg"
                       alt=""
                     />
                   </div>
                   <div className="text-base font-medium text-white">
-                    Gary Jerry, Digital Marketing Manager
+                    Vitalik Buterin, Co-Founder of Ethereum
                   </div>
                 </div>
               </footer>
@@ -56,7 +83,7 @@ export default function CurrentWork() {
           <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
             <img
               className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-              src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+              src="https://blogs-images.forbes.com/erikkain/files/2018/04/41191074732_9b01fd89cb_k.jpg"
               alt="Inbox user interface"
             />
           </div>
