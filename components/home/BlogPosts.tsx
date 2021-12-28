@@ -11,7 +11,10 @@ export default function BlogPosts() {
           return {
             title: post.title,
             href: post.canonical_url,
-            category: { name: post.tags, href: "#" },
+            category: {
+              name: post.tag_list.map((x: string) => `#${x}`).join(" "),
+              href: "#",
+            },
             description: post.description,
             date: post.readable_publish_date,
             datetime: post.published_at,
@@ -28,6 +31,19 @@ export default function BlogPosts() {
     });
   }, []);
 
+  const getCardColor = (index: number) => {
+    switch (index) {
+      case 0:
+        return "bg-emerald-400";
+      case 1:
+        return "bg-sky-300";
+      case 2:
+        return "bg-pink-400";
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="relative bg-black pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
@@ -43,7 +59,7 @@ export default function BlogPosts() {
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-          {data.map((post: any) => (
+          {data.map((post: any, index: number) => (
             <div
               key={post.title}
               className="flex flex-col rounded-lg shadow-lg overflow-hidden"
@@ -55,12 +71,14 @@ export default function BlogPosts() {
                   alt=""
                 />
               </div>
-              <div className="flex-1 bg-orange-500 p-6 flex flex-col justify-between">
+              <div
+                className={`flex-1 ${getCardColor(
+                  index
+                )} p-6 flex flex-col justify-between`}
+              >
                 <div className="flex-1">
                   <p className="text-sm font-medium text-gray-900">
-                    <a href={post.category.href} className="hover:underline">
-                      {post.category.name}
-                    </a>
+                    {post.category.name}
                   </p>
                   <a href={post.href} className="block mt-2">
                     <p className="text-xl font-semibold text-gray-900">

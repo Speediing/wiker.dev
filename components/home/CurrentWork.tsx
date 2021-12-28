@@ -19,7 +19,7 @@ export default function CurrentWork() {
               <div className="mt-6">
                 <a
                   href="#"
-                  className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-500 hover:bg-green-600"
+                  className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-500 hover:bg-orange-600"
                 >
                   View on Github
                 </a>

@@ -80,7 +80,7 @@ export default function Skills() {
           {features.map((feature) => (
             <div key={feature.name}>
               <dt>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-400 text-white">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-emerald-400 text-white">
                   <feature.icon className="h-6 w-6" aria-hidden="true" />
                 </div>
                 <p className="mt-5 text-lg leading-6 font-medium text-white">
