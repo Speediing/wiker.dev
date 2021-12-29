@@ -27,8 +27,8 @@ export default function Hero() {
               <span className="block text-orange-400">Wiker</span>
             </h1>
             <p className="mt-3 text-base text-gray-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Web and mobile developer specializing in cross-platform,
-              cloud-enabled, and Web3 application development
+              Web and mobile developer passionate about building the experiences
+              of the future.
             </p>
             <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               Currently working as a Solution Architect at

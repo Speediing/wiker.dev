@@ -23,7 +23,7 @@ export default function Box(props: any) {
       onPointerOut={(event) => setHover(false)}
     >
       <torusKnotGeometry args={[10, 3, 100, 16]} />
-      <meshStandardMaterial color={hovered ? "pink" : "orange"} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
     </mesh>
   );
 }
