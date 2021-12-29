@@ -12,8 +12,8 @@ export default function CurrentWork() {
               </h2>
               <p className="mt-4 text-lg text-gray-500">
                 I am currently working on a side-project to help sharpen both my
-                Web3 skills and getting to play with the three.js ecosystem. I'm
-                building a basic 3D game using{" "}
+                Web3 skills and getting to play with the three.js ecosystem.
+                I&apos;m building a basic 3D game using{" "}
                 <a
                   className={"text-gray-300"}
                   href={
@@ -38,8 +38,8 @@ export default function CurrentWork() {
                 <a className={"text-gray-300"} href={"https://hardhat.org/"}>
                   Hardhat.
                 </a>{" "}
-                I'm still in the initial stages of building the game, but
-                hopefully I'll have a working prototype in the near future.
+                I&apos;m still in the initial stages of building the game, but
+                hopefully I&apos;ll have a working prototype in the near future.
               </p>
               <div className="mt-6">
                 <a

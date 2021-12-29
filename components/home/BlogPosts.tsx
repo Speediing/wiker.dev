@@ -1,4 +1,5 @@
 import axios from "axios";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function BlogPosts() {
@@ -65,7 +66,7 @@ export default function BlogPosts() {
               className="flex flex-col rounded-lg shadow-lg overflow-hidden"
             >
               <div className="flex-shrink-0">
-                <img
+                <Image
                   className="h-48 w-full object-cover"
                   src={post.imageUrl}
                   alt=""
@@ -93,7 +94,7 @@ export default function BlogPosts() {
                   <div className="flex-shrink-0">
                     <a href={post.author.href}>
                       <span className="sr-only">{post.author.name}</span>
-                      <img
+                      <Image
                         className="h-10 w-10 rounded-full"
                         src={post.author.imageUrl}
                         alt=""

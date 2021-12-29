@@ -77,7 +77,7 @@ export default function About() {
           <div className="mt-8 lg:mt-0">
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                I've been working on the web professionally since 2017, and
+                I&apos;ve been working on the web professionally since 2017, and
                 unprofessionally since 2012 when I blinked my first light with a
                 Raspberry Pi.
               </p>
@@ -108,8 +108,9 @@ export default function About() {
               <br />
               <p>
                 This blog is a place where I can explore new ideas, experiment
-                with different techniques, and muse on best practices. If you're
-                interested in my thoughts on something, please let me know!
+                with different techniques, and muse on best practices. If
+                you&apos;re interested in my thoughts on something, please let
+                me know!
               </p>
             </div>
           </div>
