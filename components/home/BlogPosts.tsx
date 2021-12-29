@@ -65,13 +65,14 @@ export default function BlogPosts() {
               key={post.title}
               className="flex flex-col rounded-lg shadow-lg overflow-hidden"
             >
-              <div className="flex-shrink-0">
-                <Image
-                  className="h-48 w-full object-cover"
-                  src={post.imageUrl}
-                  alt=""
-                />
-              </div>
+              <Image
+                height={200}
+                width={400}
+                className=" object-cover"
+                src={post.imageUrl}
+                alt=""
+              />
+
               <div
                 className={`flex-1 ${getCardColor(
                   index
@@ -95,6 +96,8 @@ export default function BlogPosts() {
                     <a href={post.author.href}>
                       <span className="sr-only">{post.author.name}</span>
                       <Image
+                        height={40}
+                        width={40}
                         className="h-10 w-10 rounded-full"
                         src={post.author.imageUrl}
                         alt=""
