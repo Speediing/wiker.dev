@@ -10,25 +10,25 @@ const features = [
   {
     name: "Web and Mobile Development",
     description:
-      "Designed and built websites and mobile apps for small businesses, startups and large corporations.",
+      "Designed and built websites and mobile apps for small businesses, startups and large corporations. My main focus has primarily been on the javascript ecosystem but I also have experiance in everything from .Net to Native iOS.",
     icon: GlobeAltIcon,
   },
   {
     name: "Cloud Architecture",
     description:
-      "Tailored cloud solutions for businesses of all sizes, from data centers to private clouds.",
+      "Tailored cloud solutions for businesses of all sizes, using tools like Serverless and Kubernetes. I hold all 12 current AWS certifications and have worked on a wide variety of solutions but I focus primarily on building developer focused tooling and infratructure.",
     icon: CloudIcon,
   },
   {
     name: "Leadership",
     description:
-      "Lead teams of up to 10 people in the design, development and implementation of cloud solutions and application development.",
+      "Lead teams of up to 10 people in the design, development and implementation of cloud solutions and application development. I aim to keep a positive attitude and atmosphere and always leave time open to my team for anything they need.",
     icon: LightningBoltIcon,
   },
   {
     name: "Web3",
     description:
-      "My new favorite technology, Ethereum, is the backbone of my web development and blockchain projects. I'm truly passionate about taking advantage of the power of the blockchain and powering the decentralized internet of the future.",
+      "My new favorite technology, Blockchain, is the backbone of my new web development and blockchain projects. I'm truly passionate about taking advantage of the power of the blockchain and powering the decentralized internet of the future using Ethereum and Solana.",
     icon: BeakerIcon,
   },
 ];
