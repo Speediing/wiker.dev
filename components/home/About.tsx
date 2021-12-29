@@ -85,24 +85,24 @@ export default function About() {
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
                 I consider myself a t-shaped individual. Over the years I have
-                aquired experience in a variety of areas, from backend
-                microservice developement to frontend mobile development to core
-                platform infrastrcture. I have a passion for learning and
+                acquired experience in a variety of areas, from backend
+                microservice development to frontend mobile development to core
+                platform infrastructure. I have a passion for learning and
                 constantly seek to improve my skills. I do however have specific
                 interests in a few fields that I am most passionate about.
               </p>
               <br />
               <p>
                 Currently I work as a Solution Architect where I act as a
-                trusted advisor to clients for anything techncial in their
+                trusted advisor to clients for anything technical in their
                 digital transformation journey. I work with clients that range
-                from small public sector organisations to large enterprise
+                from small public sector organizations to large enterprise
                 companies.
               </p>
               <br />
               <p>
                 My main vertical is in application modernization where I take
-                either old existing software or new grenfield ideas and
+                either old existing software or new greenfield ideas and
                 transform them into modern custom applications.
               </p>
               <br />

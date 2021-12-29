@@ -10,13 +10,13 @@ const features = [
   {
     name: "Web and Mobile Development",
     description:
-      "Designed and built websites and mobile apps for small businesses, startups and large corporations. My main focus has primarily been on the javascript ecosystem but I also have experiance in everything from .Net to Native iOS.",
+      "Designed and built websites and mobile apps for small businesses, startups and large corporations. My main focus has primarily been on the javascript ecosystem but I also have experience in everything from .Net to Native iOS.",
     icon: GlobeAltIcon,
   },
   {
     name: "Cloud Architecture",
     description:
-      "Tailored cloud solutions for businesses of all sizes, using tools like Serverless and Kubernetes. I hold all 12 current AWS certifications and have worked on a wide variety of solutions but I focus primarily on building developer focused tooling and infratructure.",
+      "Tailored cloud solutions for businesses of all sizes, using tools like Serverless and Kubernetes. I hold all 12 current AWS certifications and have worked on a wide variety of solutions but I focus primarily on building developer focused tooling and infrastructure.",
     icon: CloudIcon,
   },
   {
