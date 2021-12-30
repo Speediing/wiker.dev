@@ -87,7 +87,7 @@ export default function Skills() {
                   {feature.name}
                 </p>
               </dt>
-              <dd className="mt-2 text-base text-gray-300">
+              <dd className="mt-2 text-base text-gray-500">
                 {feature.description}
               </dd>
             </div>
