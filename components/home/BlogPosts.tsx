@@ -2,37 +2,38 @@ import axios from "axios";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export default function BlogPosts() {
-  const [data, setData] = useState([]);
+export default function BlogPosts({ posts }: any) {
+  console.log(posts);
+  const [data, setData] = useState(posts);
 
-  useEffect(() => {
-    axios.get("https://dev.to/api/articles?username=wiker").then((res) => {
-      setData(
-        res.data
-          .map((post: any) => {
-            return {
-              title: post.title,
-              href: post.canonical_url,
-              category: {
-                name: post.tag_list.map((x: string) => `#${x}`).join(" "),
-                href: "#",
-              },
-              description: post.description,
-              date: post.readable_publish_date,
-              datetime: post.published_at,
-              imageUrl: post.social_image,
-              readingTime: `${post.reading_time_minutes} min`,
-              author: {
-                name: post.user.name,
-                href: "https://dev.to/wiker",
-                imageUrl: post.user.profile_image,
-              },
-            };
-          })
-          .slice(0, 3)
-      );
-    });
-  }, []);
+  //   useEffect(() => {
+  //     axios.get("https://dev.to/api/articles?username=wiker").then((res) => {
+  //       setData(
+  //         res.data
+  //           .map((post: any) => {
+  //             return {
+  //               title: post.title,
+  //               href: post.canonical_url,
+  //               category: {
+  //                 name: post.tag_list.map((x: string) => `#${x}`).join(" "),
+  //                 href: "#",
+  //               },
+  //               description: post.description,
+  //               date: post.readable_publish_date,
+  //               datetime: post.published_at,
+  //               imageUrl: post.social_image,
+  //               readingTime: `${post.reading_time_minutes} min`,
+  //               author: {
+  //                 name: post.user.name,
+  //                 href: "https://dev.to/wiker",
+  //                 imageUrl: post.user.profile_image,
+  //               },
+  //             };
+  //           })
+  //           .slice(0, 3)
+  //       );
+  //     });
+  //   }, []);
 
   const getCardColor = (index: number) => {
     switch (index % 3) {
