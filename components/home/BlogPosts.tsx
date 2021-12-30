@@ -33,7 +33,7 @@ export default function BlogPosts() {
   }, []);
 
   const getCardColor = (index: number) => {
-    switch (index) {
+    switch (index % 3) {
       case 0:
         return "bg-emerald-400";
       case 1:
