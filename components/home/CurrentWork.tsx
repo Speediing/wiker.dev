@@ -41,14 +41,14 @@ export default function CurrentWork() {
                 I&apos;m still in the initial stages of building the game, but
                 hopefully I&apos;ll have a working prototype in the near future.
               </p>
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <a
                   href="#"
                   className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-orange-400 hover:bg-orange-500"
                 >
                   View on Github
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="mt-8 border-t border-gray-200 pt-6">
