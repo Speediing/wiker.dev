@@ -12,6 +12,23 @@ const Home: NextPage = ({ posts }: any) => {
   return (
     <div className="h-screen">
       <Head>
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-T9NY5BTX9S`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         <title>Jason Wiker</title>
         <meta name="description" content="Jason Wiker" />
         <link rel="icon" href="/favicon.ico" />
