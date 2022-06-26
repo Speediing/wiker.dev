@@ -31,10 +31,10 @@ export default function Hero() {
               of the future.
             </p>
             <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Currently working as a Solution Architect at
-              <a href={"https://xerris.com"} className="font-bold text-white">
+              Currently working as a Sales Engineer at
+              <a href={"https://vercel.com"} className="font-bold text-white">
                 {" "}
-                Xerris Inc.
+                Vercel
               </a>
             </p>
           </div>

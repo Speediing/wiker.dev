@@ -38,7 +38,7 @@ const Home: NextPage = ({ posts }: any) => {
           <Hero />
           <About />
           <Skills />
-          <CurrentWork />
+          {/* <CurrentWork /> */}
           <BlogPosts posts={posts || []} />
         </main>
       </div>
