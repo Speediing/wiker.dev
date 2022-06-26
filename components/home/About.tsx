@@ -93,11 +93,10 @@ export default function About() {
               </p>
               <br />
               <p>
-                Currently I work as a Solution Architect where I act as a
-                trusted advisor to clients for anything technical in their
-                digital transformation journey. I work with clients that range
-                from small public sector organizations to large enterprise
-                companies.
+                Currently I work as a Sales Engineer where I act as a trusted
+                advisor to clients for anything technical in their digital
+                transformation journey. I work with clients that range from
+                small public sector organizations to large enterprise companies.
               </p>
               <br />
               <p>
