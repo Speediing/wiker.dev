@@ -25,12 +25,6 @@ const features = [
       "Lead teams of up to 10 people in the design, development and implementation of cloud solutions and application development. I aim to keep a positive attitude and atmosphere and always leave time open to my team for anything they need.",
     icon: LightningBoltIcon,
   },
-  {
-    name: "Web3",
-    description:
-      "My new favorite technology, Blockchain, is the backbone of my new web development and blockchain projects. I'm truly passionate about taking advantage of the power of the blockchain and powering the decentralized internet of the future using Ethereum and Solana.",
-    icon: BeakerIcon,
-  },
 ];
 
 export default function Skills() {
